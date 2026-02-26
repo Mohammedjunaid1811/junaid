@@ -178,7 +178,7 @@ Risk: {student['Risk_Level']}
             model=MODEL_NAME,
             messages=[{"role": "user", "content": prompt}],
             temperature=0.7,
-            max_tokens=300
+            max_tokens=100
         )
         return response.choices[0].message.content
 
