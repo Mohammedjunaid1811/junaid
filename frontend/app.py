@@ -7,11 +7,6 @@ import plotly.express as px
 import plotly.graph_objects as go
 from datetime import datetime
 
-# ==========================================
-# CONNECT BACKEND
-# ==========================================
-
-# Add backend to path
 sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 
 from backend.core import (
@@ -30,13 +25,9 @@ from backend.core import (
     get_average_metrics
 )
 
-# ==========================================
-# PAGE CONFIG
-# ==========================================
-
 st.set_page_config(
     page_title="AI Student Risk Predictor",
-    page_icon="🎓",
+    page_icon="SR",
     layout="wide",
     initial_sidebar_state="expanded"
 )
